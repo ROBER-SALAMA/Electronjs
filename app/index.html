@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
     <title>Electron app</title>
-</head>
-<body>
-    <h1>hola mundo desde electronJS</h1>
-</body>
+  </head>
+  <body>
+    <h1>My favorite websites</h1>
+
+    <section class="add-new-link">
+      <form class="new-link-form">
+        <input
+          type="url"
+          class="new-link-url"
+          placeholder="url"
+          size="100"
+          autofocus/>
+          <button type="submit"
+          class="new-link-button"
+          disabled>Save</button>
+      </form>
+    </section>
+
+    <section class="links"></section>
+    <section>
+        <button class="clear-store">Clear store</button>
+    </section>
+
+  </body>
 </html>
